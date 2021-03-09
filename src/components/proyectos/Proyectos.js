@@ -2,6 +2,8 @@ import React from 'react'
 import Sidebar from '../layout/Sidebar';
 import Barra from '../layout/Barra';
 import FormTarea from '../Tarea/FormTarea';
+import ListadoTarea from '../Tarea/ListadoTareas';
+import ListadoTareas from '../Tarea/ListadoTareas';
 
 
 const Proyectos = () => {
@@ -14,9 +16,9 @@ const Proyectos = () => {
                 
                 <main>
                     <FormTarea/>
-                    
+
                     <div className="contenedor-tareas">
-                        
+                        <ListadoTareas />
                     </div>
                 </main>
             </div>
