@@ -4,10 +4,12 @@ import Login from './components/auth/Login';
 import NuevaCuenta from './components/auth/NuevaCuenta';
 import Proyecto from './components/proyectos/Proyectos';
 
+import ProyectoState from './components/context/proyectos/ProyectoState';
   
 
 function App() {
   return (
+    <ProyectoState>
     <Router>
       <Switch>
         <Route exact path="/" component={Login} />
@@ -17,6 +19,7 @@ function App() {
       </Switch>
 
     </Router>
+    </ProyectoState>
   );
 }
 
