@@ -4,11 +4,12 @@ import Login from './components/auth/Login';
 import NuevaCuenta from './components/auth/NuevaCuenta';
 import Proyecto from './components/proyectos/Proyectos';
 
-import ProyectoState from './components/context/proyectos/ProyectoState';
+import ProyectoState from './components/context/proyectos/proyectoState';
   
 
 function App() {
   return (
+
     <ProyectoState>
     <Router>
       <Switch>
