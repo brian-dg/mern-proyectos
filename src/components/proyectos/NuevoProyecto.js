@@ -7,7 +7,7 @@ const NuevoProyecto = () => {
 
     // obtener el state el formulario
     const proyectosContext = useContext(proyectoContext);
-    const {formulario, mostrarFormulario} = proyectosContext;
+    const {formulario, mostrarFormulario, agregarProyecto} = proyectosContext;
 
 
     //state para Proyecto 
@@ -31,11 +31,16 @@ const NuevoProyecto = () => {
         e.preventDefault();
 
         //validar el proyecto
-
+        if (nombre==="") {
+            return;
+        }
         //Agregar al state 
+        agregarProyecto(proyecto)
 
         //Reiniciar el Form
-
+        guardarProyecto ({
+            nombre:''
+        })
     }
 
     // Mostrar el Formulario 
