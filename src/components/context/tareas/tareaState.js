@@ -47,7 +47,6 @@ const TareaState = props => {
 
     )
 
-
 }
 
 export default TareaState;

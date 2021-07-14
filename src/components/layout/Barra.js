@@ -4,7 +4,7 @@ const Barra = () =>{
     return (
         <header className ="app-header">
             <p className="nombre-usuario">
-                Hola <span>Juan</span>
+                Hola <span>brian</span>
             </p>
 
             <nav className="nav-principal">
