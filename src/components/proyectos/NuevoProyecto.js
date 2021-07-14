@@ -1,5 +1,5 @@
 import React, {Fragment, useContext, useState} from 'react';
-import proyectoContext from '../context/proyectos/proyectoContext';
+import proyectoContext from '../context/proyectos/ProyectoContext';
 
 
 
