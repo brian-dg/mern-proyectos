@@ -19,12 +19,7 @@ if (!proyectos) return <h2>Seleccione un proyecto</h2>
 // Array destructuring para extraer el proyecto actual 
 const [proyectoActual ]= proyectos;
 
-const tareasProyecto = [
-    {nombre: 'elegir plataforma', estado: true},
-    {nombre: 'elegir colores', estado: false},
-    {nombre: 'elegir forma de pago', estado: false},
-    {nombre: 'elegir hosting', estado: true},
-];
+const tareasProyecto = [];
 
 //elimina un proyecto
 const onclickEliminar = () => {

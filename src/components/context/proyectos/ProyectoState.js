@@ -113,7 +113,4 @@ return (
 
 }
 
-
-
-
 export default ProyectoState;

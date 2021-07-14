@@ -5,7 +5,7 @@ import NuevaCuenta from './components/auth/NuevaCuenta';
 import Proyecto from './components/proyectos/Proyectos';
 
 import ProyectoState from './components/context/proyectos/ProyectoState';
-import TareaContext from './components/context/tareas/tareaContext';
+import TareaState from './components/context/tareas/tareaState';
 
   
 
@@ -13,7 +13,7 @@ function App() {
   return (
 
       <ProyectoState>
-        <TareaContext.Provider>
+        <TareaState>
         <Router>
         <Switch>
           <Route exact path="/" component={Login} />
@@ -23,7 +23,7 @@ function App() {
         </Switch>
 
       </Router>
-        </TareaContext.Provider>
+        </TareaState>
       </ProyectoState>
   );
 }
