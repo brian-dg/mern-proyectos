@@ -15,6 +15,8 @@ const {obtenerTareas} = tareasContext;
     const seleccionarProyecto = id => {
         proyectoActual(id);//Fijar un proyecto Actual
         obtenerTareas(id)//Filtrar las tareas cuando se de click 
+
+        
     }
 
     return (
